@@ -153,6 +153,9 @@ print(f"\nFinal Prediction (Majority Vote) for {test_url}: {'Phishing' if final_
 # Initialize Flask app
 app = Flask(__name__)
 
+# Set secret key for Flask app
+app.config['SECRET_KEY'] = 'your_generated_secret_key_here'  # Replace with the generated key
+
 # Load models
 models = {
     "Logistic Regression": joblib.load("phishing_detection_model_logistic_regression.pkl"),
