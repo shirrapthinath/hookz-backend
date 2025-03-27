@@ -162,6 +162,11 @@ models = {
     "Neural Network": joblib.load("phishing_detection_model_neural_network.pkl")
 }
 
+# Flask route for home
+@app.route("/")
+def home():
+    return "Hookz Backend Running!"
+
 # Flask route for prediction
 @app.route('/predict', methods=['POST'])
 def predict():
