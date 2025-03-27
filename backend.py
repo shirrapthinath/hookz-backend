@@ -154,7 +154,7 @@ print(f"\nFinal Prediction (Majority Vote) for {test_url}: {'Phishing' if final_
 app = Flask(__name__)
 
 # Set secret key for Flask app
-app.config['SECRET_KEY'] = 'your_generated_secret_key_here'  # Replace with the generated key
+app.config['SECRET_KEY'] = 'eb20a306698f775c509c4a38f61d842b3459ffc8ad36a7c31bd30904aa93a82d'  # Replace with the generated key
 
 # Load models
 models = {
